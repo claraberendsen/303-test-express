@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "boom": "^7.2.0",
     "express": "^4.16.3",
     "faker": "^4.1.0",
     "morgan": "^1.9.1",
