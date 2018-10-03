@@ -4,6 +4,7 @@
     "express": "^4.16.3",
     "faker": "^4.1.0",
     "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.39.0",
@@ -19,7 +20,8 @@
     "sequelize": "node_modules/.bin/sequelize",
     "create-database": "yarn sequelize db:create",
     "migrate": "yarn sequelize db:migrate",
-    "seed": "yarn sequelize db:seed:all"
+    "seed": "yarn sequelize db:seed:all",
+    "start": "nodemon ./bin/www"
   },
   "repository": "https://github.com/blackchameleon/303-test-express",
   "author": "clara berendsen <claraberendsen@gmail.com>",
