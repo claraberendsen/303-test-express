@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
+    "username": "rediguana",
+    "password": "rediguana",
     "database": "303-express-test",
     "host": "127.0.0.1",
     "dialect": "postgres"
