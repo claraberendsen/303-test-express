@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-¿
+const routeArticle = require('./routes/article');
 
 // Initialization of the app
 const app = express();
@@ -9,6 +9,9 @@ const app = express();
 app.use(morgan('dev'));
 
 app.use(express.json());
+
+app.use('', routeArticle);
+
 
 // Rendering error function
 
