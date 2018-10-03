@@ -13,6 +13,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "node_modules/eslint/bin/eslint.js",
+    "lint": "yarn eslint .",
     "sequelize": "node_modules/.bin/sequelize",
     "create-database": "yarn sequelize db:create",
     "migrate": "yarn sequelize db:migrate",
