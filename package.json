@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0",
+    "sequelize-cli": "^4.1.1"
+  },
+  "name": "303-express-test",
+  "version": "1.0.0",
+  "description": "Express API test for 303 Software",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "node_modules/eslint/bin/eslint.js",
+    "sequelize": "node_modules/.bin/sequelize"
+  },
+  "repository": "https://github.com/blackchameleon/303-test-express",
+  "author": "clara berendsen <claraberendsen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
