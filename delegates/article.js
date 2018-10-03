@@ -4,7 +4,7 @@ const db = require('../models');
 /** Delegates for article model */
 
 const createArticle = async (article) => {
-  const created = await db.articles.create(article);
+  const created = await db.article.create(article);
   if (!created) {
     throw boom.expectationFailed('The article could not be created');
   }
@@ -15,7 +15,7 @@ const getArticle = async (id) => {
   if (!Number.isInteger(id * 1)) {
     throw boom.badRequest('ID is not an integer');
   }
-  const article = await db.articles.findById(id);
+  const article = await db.article.findById(id);
   if (!article) {
     throw boom.notFound('Article not found');
   }
@@ -23,7 +23,7 @@ const getArticle = async (id) => {
 };
 
 const getAllArticles = async () => {
-  const articles = await db.articles.findAll({
+  const articles = await db.article.findAll({
     order: [['createdAt', 'DESC']],
   });
   if (!articles) {
